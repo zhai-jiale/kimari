@@ -6,12 +6,12 @@
         <title>Document</title>
     </head>
     <body>
-        <div id="timer"></div>
+        <h1 id="timer"></h1>
         <script>
             let timer = document.querySelector("#timer");
-            const date = new Date();
             setInterval(() => {
-                timer.innerHTML = date.toLocaleTimeString();
+                timer.innerHTML =
+                    "当前时间: " + new Date().toLocaleTimeString();
             }, 1000);
         </script>
     </body>
